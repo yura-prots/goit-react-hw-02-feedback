@@ -8,14 +8,16 @@ class App extends Component {
   };
 
   addFeedback = e => {
-    console.log(e.target.name);
+    const name = e.target.name;
 
     this.setState(prevState => {
-      return { [e.target.name]: prevState[e.target.name] + 1 };
+      return { [name]: prevState[name] + 1 };
     });
   };
 
   render() {
+    const { good, neutral, bad } = this.state;
+
     return (
       <div>
         <h1>Please leave feedback</h1>
@@ -29,9 +31,9 @@ class App extends Component {
           Bad
         </button>
         <h2>Statistics</h2>
-        <p>Good: {this.state.good}</p>
-        <p>Neutral: {this.state.neutral}</p>
-        <p>Bad: {this.state.bad}</p>
+        <p>Good: {good}</p>
+        <p>Neutral: {neutral}</p>
+        <p>Bad: {bad}</p>
       </div>
     );
   }
