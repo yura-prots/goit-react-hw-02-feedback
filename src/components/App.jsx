@@ -1,6 +1,7 @@
 import { Component } from 'react';
 
 import { Statistics } from './Statistics/Statistics';
+import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 
 class App extends Component {
   state = {
@@ -33,15 +34,10 @@ class App extends Component {
     return (
       <div>
         <h1>Please leave feedback</h1>
-        <button type="button" name="good" onClick={this.addFeedback}>
-          Good
-        </button>
-        <button type="button" name="neutral" onClick={this.addFeedback}>
-          Neutral
-        </button>
-        <button type="button" name="bad" onClick={this.addFeedback}>
-          Bad
-        </button>
+        <FeedbackOptions
+          options={{ good, neutral, bad }}
+          onLeaveFeedback={this.addFeedback}
+        ></FeedbackOptions>
 
         <Statistics
           good={good}
