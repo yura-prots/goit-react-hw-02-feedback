@@ -16,11 +16,13 @@ class App extends Component {
   };
 
   countTotalFeedback() {
-    return this.state.good + this.state.neutral + this.state.bad;
+    const { good, neutral, bad } = this.state;
+    return good + neutral + bad;
   }
 
   countPositiveFeedbackPercentage() {
-    return Math.round((this.state.good * 100) / this.countTotalFeedback());
+    const { good } = this.state;
+    return Math.round((good * 100) / this.countTotalFeedback());
   }
 
   render() {
