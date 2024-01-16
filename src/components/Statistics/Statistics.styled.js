@@ -5,10 +5,10 @@ export const List = styled.ul`
   list-style-position: inside;
   width: 600px;
   max-width: 100%;
-  /* background: peachpuff; */
+  padding: 0 1em;
   box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.15);
-  color: white;
   border-radius: 0.75rem;
+  color: white;
 `;
 
 export const Item = styled.li`
