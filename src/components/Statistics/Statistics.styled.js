@@ -9,7 +9,7 @@ export const List = styled.ul`
   box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.15);
   padding: 0;
   margin: 0;
-  border-radius: 0.1rem;
+  border-radius: 0.75rem;
 `;
 
 export const Item = styled.li`

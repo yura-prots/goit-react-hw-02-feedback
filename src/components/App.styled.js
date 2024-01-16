@@ -6,3 +6,8 @@ export const Container = styled.div`
   align-items: center;
   font-size: 1.4rem;
 `;
+
+export const Wrapper = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+`;

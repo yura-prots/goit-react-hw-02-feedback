@@ -1,10 +1,10 @@
 import { Component } from 'react';
 
+import { Container, Wrapper } from './App.styled';
+import { Section } from './Section/Section';
 import { Statistics } from './Statistics/Statistics';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
-import { Section } from './Section/Section';
 import { Notification } from './Notification/Notification';
-import { Container } from './App.styled';
 
 class App extends Component {
   state = {
@@ -37,10 +37,12 @@ class App extends Component {
     return (
       <Container>
         <Section title={'Please leave feedback'}>
-          <FeedbackOptions
-            options={{ good, neutral, bad }}
-            onLeaveFeedback={this.addFeedback}
-          ></FeedbackOptions>
+          <Wrapper>
+            <FeedbackOptions
+              options={{ good, neutral, bad }}
+              onLeaveFeedback={this.addFeedback}
+            ></FeedbackOptions>
+          </Wrapper>
         </Section>
 
         <Section title={'Statistics'}>
