@@ -1,5 +1,8 @@
-@import-normalize; /* bring in normalize.css styles */
+import { createGlobalStyle } from 'styled-components';
+import 'modern-normalize';
+import img from './images/bg.jpg';
 
+export const GlobalStyle = createGlobalStyle`
 body {
   margin: 0;
   padding: 0;
@@ -10,12 +13,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-image: url(../public/bg.jpg);
+  background-image: url(${img});
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
+`;
