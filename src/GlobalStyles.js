@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 import 'modern-normalize';
 import img from './images/bg.jpg';
 
-export const GlobalStyle = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
 body {
   margin: 0;
   padding: 0;
