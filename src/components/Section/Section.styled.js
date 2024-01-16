@@ -1,9 +1,5 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.section`
-  outline: 1px solid tomato;
-`;
+export const Wrapper = styled.section``;
 
-export const Title = styled.h2`
-  color: green;
-`;
+export const Title = styled.h2``;

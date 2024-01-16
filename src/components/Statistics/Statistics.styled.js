@@ -1,16 +1,5 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  font-family: 'Gloria Hallelujah', cursive;
-  font-size: 1.4rem;
-  /* background: whitesmoke; */
-  /* margin: 0;
-	padding: 1rem; */
-  display: grid;
-  place-items: center;
-  min-height: 100vh;
-`;
-
 export const List = styled.ul`
   list-style: none;
   list-style-position: inside;

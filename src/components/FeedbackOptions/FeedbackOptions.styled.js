@@ -13,7 +13,7 @@ export const Button = styled.button`
   cursor: pointer;
   display: inline-flex;
   fill: currentcolor;
-  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+  /* font-family: 'Google Sans', Roboto, Arial, sans-serif; */
   font-size: 14px;
   font-weight: 500;
   height: 48px;

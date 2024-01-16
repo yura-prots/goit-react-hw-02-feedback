@@ -1,4 +1,4 @@
-import { Container, List, Item } from './Statistics.styled';
+import { List, Item } from './Statistics.styled';
 
 export const Statistics = ({
   good,
@@ -8,14 +8,12 @@ export const Statistics = ({
   positivePercentage,
 }) => {
   return (
-    <Container>
-      <List>
-        <Item>Good: {good}</Item>
-        <Item>Neutral: {neutral}</Item>
-        <Item>Bad: {bad}</Item>
-        <Item>Total: {total}</Item>
-        <Item>Positive: {positivePercentage || 0} %</Item>
-      </List>
-    </Container>
+    <List>
+      <Item>Good: {good}</Item>
+      <Item>Neutral: {neutral}</Item>
+      <Item>Bad: {bad}</Item>
+      <Item>Total: {total}</Item>
+      <Item>Positive: {positivePercentage || 0} %</Item>
+    </List>
   );
 };
