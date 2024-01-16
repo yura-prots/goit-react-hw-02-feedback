@@ -42,7 +42,7 @@ class App extends Component {
             <FeedbackOptions
               options={{ good, neutral, bad }}
               onLeaveFeedback={this.addFeedback}
-            ></FeedbackOptions>
+            />
           </Wrapper>
         </Section>
 
