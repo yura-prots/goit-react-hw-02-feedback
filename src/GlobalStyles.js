@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import 'modern-normalize';
+
 import img from './images/bg.jpg';
 
 export const GlobalStyles = createGlobalStyle`

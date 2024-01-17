@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import { Button } from './FeedbackOptions.styled';
 
-export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   const feedbackNames = Object.keys(options);
 
   return feedbackNames.map(name => (
@@ -20,3 +20,5 @@ FeedbackOptions.propTypes = {
   }).isRequired,
   onLeaveFeedback: PropTypes.func.isRequired,
 };
+
+export default FeedbackOptions;
