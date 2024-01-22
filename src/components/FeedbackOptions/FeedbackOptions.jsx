@@ -3,21 +3,15 @@ import PropTypes from 'prop-types';
 import { Button } from './FeedbackOptions.styled';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
-  const feedbackNames = Object.keys(options);
-
-  return feedbackNames.map(name => (
-    <Button type="button" key={name} name={name} onClick={onLeaveFeedback}>
-      {name}
+  return options.map(option => (
+    <Button type="button" key={option} name={option} onClick={onLeaveFeedback}>
+      {option}
     </Button>
   ));
 };
 
 FeedbackOptions.propTypes = {
-  options: PropTypes.exact({
-    good: PropTypes.number.isRequired,
-    neutral: PropTypes.number.isRequired,
-    bad: PropTypes.number.isRequired,
-  }).isRequired,
+  options: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
   onLeaveFeedback: PropTypes.func.isRequired,
 };
 
